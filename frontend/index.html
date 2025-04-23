@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>University Student Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎓 University Student Manager</h1>
+
+    <section class="form-section">
+      <h2>Add New Student</h2>
+      <input type="text" id="studentName" placeholder="Student Full Name" required>
+      <input type="text" id="universityName" placeholder="University Real Name" required>
+      <button onclick="addStudent()">Add Student</button>
+      <button onclick="exportStudents()">📁 Export Students</button>
+      <br />
+     
+      
+    </section>
+
+    <section class="list-section">
+      <h2>Students List</h2>
+      <ul id="studentList"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <div id="loader" class="loader" style="display: none;"></div>
+
+</body>
+</html>
